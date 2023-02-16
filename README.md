@@ -19,8 +19,8 @@ The other method is ExecutorService, which I used to process the products of an 
 
 To complete a task, a thread must perform the following steps:
 -> extract the line containing the product from the file
-    * parse the file line by line
-    * if the line contains the order name from the task, check what number the product on that line has
-    * if the product number corresponds to the current position specified in the task, return the line on which that product is located
+      * parse the file line by line
+      * if the line contains the order name from the task, check what number the product on that line has
+      * if the product number corresponds to the current position specified in the task, return the line on which that product is located
 -> add the product to the output file, using the specified format
 -> check if the product specified in the task is the last product found, and notify the order thread that all products have been processed.
