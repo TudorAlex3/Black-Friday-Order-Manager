@@ -5,14 +5,13 @@
 
 It is desired to implement a Black Friday order processor in the Java programming language that uses parallel mechanisms. The idea is to process orders in parallel, and to process each product separately (even within the same order) in parallel.
 
-The program should read two input files (containing orders and the products they contain) and create two output files in which to write the shipped orders and the shipped products.
+The program should read two input files (containing orders and the products they contain) and create two output files in which to write the shipped orders and the shipped products. <br>
 
-<br>
+
 #### ➢ Runnable
 
-One way to use threads is to create a class that implements the Runnable interface. This class is responsible for resolving the orders. In the run() method, each thread extracts an order from the order file, then adds to a pool a number of tasks equal to the number of products in that order. After doing this, the thread waits, using the wait() method, to receive notification from one of the threads that handles the products, in order to complete the order.
+One way to use threads is to create a class that implements the Runnable interface. This class is responsible for resolving the orders. In the run() method, each thread extracts an order from the order file, then adds to a pool a number of tasks equal to the number of products in that order. After doing this, the thread waits, using the wait() method, to receive notification from one of the threads that handles the products, in order to complete the order. <br>
 
-<br> 
 #### ➢ ExecutorService
 
 The other method is ExecutorService, which I used to process the products of an order. This pool will be occupied by a maximum number of threads equal to the parameter offered at runtime. Each task in the pool contains details such as the name of the order to which the product belongs, the position of the product in the file, the total number of products in the order, and an Object used to notify the order thread.
