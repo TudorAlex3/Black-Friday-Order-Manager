@@ -1,9 +1,6 @@
 # Black-Friday-Order-Manager
 
-
-#### ➢ Task
-
-It is desired to implement a Black Friday order processor in the Java programming language that uses parallel mechanisms. The idea is to process orders in parallel, and to process each product separately (even within the same order) in parallel.
+This is the implementation of a Black Friday order processor in the Java programming language that uses parallel mechanisms. The idea is to process orders in parallel, and to process each product separately (even within the same order) in parallel.
 
 The program should read two input files (containing orders and the products they contain) and create two output files in which to write the shipped orders and the shipped products. <br>
 
