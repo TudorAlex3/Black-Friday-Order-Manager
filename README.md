@@ -1,4 +1,5 @@
 # Black-Friday-Order-Manager
+
 <p align="justify">
 This is the implementation of a Black Friday order processor in the Java programming language that uses parallel mechanisms. The idea is to process orders in parallel, and to process each product separately (even within the same order) in parallel.
 </p>
